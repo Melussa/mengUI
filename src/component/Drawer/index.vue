@@ -75,6 +75,47 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style  lang="scss">
+  .el-drawer__container{
+    overflow: hidden;
+    position: relative;
+    .el-drawer{
+      max-width: 640px !important;
+      &.has-footer{
+        padding-bottom: 52px;
+        box-sizing: border-box;
+        height: 100%;
+      }
+    }
+    .el-drawer__header{
+      margin: 0;
+      padding: 0 16px;
+      height: 52px;
+      line-height: 52px;
+      font-size:16px;
+      font-weight: 900;
+      border-bottom: 1px solid rgba(233,233,233,1);
+      color: rgba(0, 0, 0, .85);
+    }
+    .el-drawer__body{
+      width: 100%;
+      height: 100%;
+      padding: 16px;
+      .el-scrollbar__wrap{
+        overflow-x: hidden;
+      }
+    }
+    .drawer-footer{
+      width: 100%;
+      height: 52px;
+      line-height: 52px;
+      border-top: 1px solid rgba(233,233,233,1);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0 16px;
+      text-align: right;
+    }
+  }
 
 </style>
