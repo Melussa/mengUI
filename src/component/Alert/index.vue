@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'Index',
+  name: 'Malert',
   components: {},
   props: {
     // 是否显示
