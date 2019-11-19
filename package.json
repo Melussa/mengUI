@@ -10,13 +10,13 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "main": "dist/mengui.min.js",
-  "homepage": "",
+  "homepage": "https://github.com/Melussa/mengUI",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/Melussa/mengUI/issues"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Melussa/mengUI"
   },
   "keywords": [
     "hz",
