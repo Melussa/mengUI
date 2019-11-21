@@ -1,4 +1,10 @@
 # mengui
+## 如何使用
+```
+    npm install mengui / yarn add mengui
+    若组件不能满足可以下载源码，并优化源码之后在进行使用（可以直接将components文件夹中的组件复制进项目中/ 或者发布npm 之后安装依赖）
+```
+## 使用文档[https://melussa.github.io/](https://melussa.github.io/)
 
 > 这是一个基于elementUI + vue实现的组件的二次封装
 ## 1、目录结构说明
@@ -20,7 +26,5 @@
     1. npm run build / yarn build
     2. npm publish
 ```
-## 3、关于issues
-```
-    关于issues <https://github.com/Melussa/mengUI/issues>
-```
+## 3、[关于issues](https://github.com/Melussa/mengUI/issues)
+

@@ -17,7 +17,4 @@
    install(window.Vue);
  }
 
- export default {
-   install,
-   Malert
- }
+ export default install
