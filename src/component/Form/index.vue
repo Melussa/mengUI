@@ -308,7 +308,7 @@ export default {
   }
   @mixin setMinMax {
     max-width: 400px;
-    /*min-width: 350px;*/
+    min-width: 180px;
   }
 
   @mixin widthScreen {
@@ -374,6 +374,7 @@ export default {
     .el-select{
       max-width: 100%;
       width: 400px;
+      min-width: 180px;
       .el-input{
         max-width: 400px;
       }
