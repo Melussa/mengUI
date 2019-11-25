@@ -302,4 +302,106 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+  .el-button--mini{
+    padding: 9px 15px;
+  }
+  @mixin setMinMax {
+    max-width: 400px;
+    min-width: 350px;
+  }
+
+  @mixin widthScreen {
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+  }
+
+  .page-form{
+    .el-form-item{
+      margin-bottom: 24px;
+    }
+    .el-form-item__error{
+      padding-top: 5px;
+    }
+    .el-form-item__label{
+      text-align: left;
+      font-size:14px;
+      color: rgba(0, 0, 0, .85);
+      font-weight: 400;
+      height: 32px;
+      line-height: 32px;
+    }
+    .el-input__inner{
+      height: 32px;
+      line-height: 32px;
+      border-radius:4px;
+      border:1px solid rgba(0,0,0,0.15);
+      @include setMinMax;
+    }
+    .el-form__oneline{
+      .el-input__inner{
+        @include widthScreen;
+      }
+    }
+    .el-input-number{
+      .el-input__inner{
+        width: 130px;
+        min-width: unset;
+        max-width: unset;
+      }
+    }
+    .el-textarea__inner{
+      @include setMinMax;
+      max-height: 400px;
+      &::-webkit-scrollbar {
+        width: 6px; // 横向滚动条
+        height: 6px; // 纵向滚动条 必写
+        cursor: pointer;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #ddd;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    }
+
+    .el-form__oneline{
+      .el-textarea__inner{
+        @include widthScreen;
+      }
+    }
+    .el-select{
+      max-width: 100%;
+      min-width: 350px;
+      width: 400px;
+      .el-input{
+        max-width: 400px;
+      }
+    }
+    .el-date-editor{
+      width: 100%;
+    }
+    .form-tag{
+      margin: 0 6px 6px 0;
+    }
+    .button-new-tag {
+      height: 32px;
+      line-height: 30px;
+      padding-top: 0;
+      padding-bottom: 0;
+      vertical-align: middle;
+    }
+    .input-new-tag {
+      .el-input__inner{
+        width: 90px;
+        min-width: unset;
+        vertical-align: middle;
+      }
+    }
+    .input-new-tag{
+      width: unset;
+    }
+  }
+</style>
 

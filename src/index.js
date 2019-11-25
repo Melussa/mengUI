@@ -5,7 +5,7 @@
  import Form from './component/Form'
 
  const components = [
-   Malert, Dialog, Drawer
+   Malert, Dialog, Drawer, Form
  ]
 
  const install = function(Vue) {
