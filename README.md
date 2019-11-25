@@ -1,4 +1,7 @@
 # mengui
+这是一个基于elementUI+vue实现的UI 组件库，目前包括Table, Dialog, Malert通栏提示, Drawer, Form表单等
+并在持续更新优化中
+
 ## 如何使用
 ```
     npm install mengui / yarn add mengui
