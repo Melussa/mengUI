@@ -308,7 +308,7 @@ export default {
   }
   @mixin setMinMax {
     max-width: 400px;
-    min-width: 350px;
+    /*min-width: 350px;*/
   }
 
   @mixin widthScreen {
@@ -337,7 +337,7 @@ export default {
       line-height: 32px;
       border-radius:4px;
       border:1px solid rgba(0,0,0,0.15);
-      //@include setMinMax;
+      @include setMinMax;
     }
     .el-form__oneline{
       .el-input__inner{
@@ -352,7 +352,7 @@ export default {
       }
     }
     .el-textarea__inner{
-      //@include setMinMax;
+      @include setMinMax;
       max-height: 400px;
       &::-webkit-scrollbar {
         width: 6px; // 横向滚动条
@@ -373,7 +373,6 @@ export default {
     }
     .el-select{
       max-width: 100%;
-      min-width: 350px;
       width: 400px;
       .el-input{
         max-width: 400px;
