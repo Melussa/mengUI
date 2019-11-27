@@ -121,7 +121,7 @@
         <slot :name="item.value"/>
       </template>
     </el-form-item>
-    <el-form-item>
+    <el-form-item v-if="isShowBtn">
       <el-button type="primary" :loading="isLoading" @click="onSubmitEvent('form')"> 提 交 </el-button>
       <el-button type="default" @click="onCancelEvent('form')"> 取 消 </el-button>
     </el-form-item>
@@ -132,6 +132,11 @@
 export default {
   name: 'Form',
   props: {
+    // 是否显示表单提交按钮
+    isShowBtn: {
+      type: Boolean,
+      default: true
+    },
     // 是否提交
     isLoading: {
       type: Boolean,
