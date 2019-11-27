@@ -184,7 +184,7 @@ export default {
     // label宽度
     labelWidth: {
       type: String,
-      default: '150px'
+      default: '0'
     },
     refObj: {
       type: Object,
