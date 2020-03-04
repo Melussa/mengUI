@@ -35,6 +35,7 @@
           v-for="(option,key) in dialogOption"
           :key="key"
           :type="option.type"
+          :loading="option.isLoading"
           @click="onConfirmEvent(option)"
         >
           <span v-if="option.isShow">{{ option.name }}</span>
@@ -74,8 +75,8 @@ export default {
       type: Array,
       default() {
         return [
-          { name: '取消', isShow: true, btnType: 'cancel', type: 'default', fun: 'onCancelEvent' },
-          { name: '确定', isShow: true, btnType: 'confirm', type: 'primary', fun: 'onConfirmEvent' }
+          { name: '取消', isLoading: false,  isShow: true, btnType: 'cancel', type: 'default', fun: 'onCancelEvent' },
+          { name: '确定', isLoading: false, isShow: true, btnType: 'confirm', type: 'primary', fun: 'onConfirmEvent' }
         ]
       }
     },
@@ -150,7 +151,7 @@ export default {
     onConfirmEvent(param) {
       this.$emit('dialogHandleEvent', param)
       // 确认相应的功能之后 关闭dialog
-      this.myyDialogClose()
+      // this.myyDialogClose()
     },
     /**
      * 改变每页显示条数
